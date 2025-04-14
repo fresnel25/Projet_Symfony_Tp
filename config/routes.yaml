@@ -1,5 +1,21 @@
-controllers:
-    resource:
-        path: ../src/Controller/
-        namespace: App\Controller
-    type: attribute
+# controllers:
+#     resource:
+#         path: ../src/Controller/
+#         namespace: App\Controller
+#     type: attribute
+
+app_home:
+    path: "/"
+    controller: App\Controller\HomeController::home
+
+app_activity:
+    path: "/activity"
+    controller: App\Controller\HomeController::activity
+
+app_event:
+    path: "/event"
+    controller: App\Controller\HomeController::event
+
+app_contact_new:
+    path: "/new"
+    controller: App\Controller\ContactController::new

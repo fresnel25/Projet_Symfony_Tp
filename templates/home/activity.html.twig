@@ -1,0 +1,91 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}
+	Activités – RSE-IT
+{% endblock %}
+
+{% block body %}
+
+	{% include "menu.html.twig" %}
+
+	<div class="container mt-4">
+		<div class="bg-success py-3 px-3 rounded text-white">
+			<h2 class="mb-0">🛠️ Nos Activités</h2>
+			<p class="mb-0">Découvrez les initiatives écologiques menées par l'association : jardinage, recyclage, éducation à l'environnement, et plus encore.</p>
+		</div>
+
+		<div class="bg-light px-4 py-4 mt-4 rounded">
+			<div
+				class="row row-cols-1 row-cols-md-3 g-4">
+
+				<!-- Activité 1 -->
+				<div class="col">
+					<div class="card h-100 shadow-sm">
+						<img src="{{ asset('img/plante11.jpg') }}" class="card-img-top" alt="Jardin partagé">
+						<div class="card-body">
+							<h5 class="card-title">🌿 Création de jardins partagés</h5>
+							<p class="card-text">Aménagement de potagers urbains accessibles à tous pour favoriser l’autosuffisance alimentaire et la biodiversité locale.</p>
+						</div>
+					</div>
+				</div>
+
+				<!-- Activité 2 -->
+				<div class="col">
+					<div class="card h-100 shadow-sm">
+						<img src="{{ asset('img/plante12.jpg') }}" class="card-img-top" alt="Recyclage">
+						<div class="card-body">
+							<h5 class="card-title">♻️ Ateliers de recyclage créatif</h5>
+							<p class="card-text">Sensibilisation au tri des déchets et réutilisation d’objets du quotidien pour en faire des œuvres ou outils utiles.</p>
+						</div>
+					</div>
+				</div>
+
+				<!-- Activité 3 -->
+				<div class="col">
+					<div class="card h-100 shadow-sm">
+						<img src="{{ asset('img/plante13.jpg') }}" class="card-img-top" alt="Nettoyage nature">
+						<div class="card-body">
+							<h5 class="card-title">🧹 Nettoyage de sentiers & forêts</h5>
+							<p class="card-text">Actions citoyennes pour préserver les espaces verts, avec ramassage des déchets et sensibilisation sur place.</p>
+						</div>
+					</div>
+				</div>
+
+				<!-- Activité 4 -->
+				<div class="col">
+					<div class="card h-100 shadow-sm">
+						<img src="{{ asset('img/trees-with-green-leaves.jpg') }}" class="card-img-top" alt="Éducation écologique">
+						<div class="card-body">
+							<h5 class="card-title">📚 Éducation à l’environnement</h5>
+							<p class="card-text">Sessions pédagogiques pour enfants et adultes afin de comprendre les enjeux du développement durable.</p>
+						</div>
+					</div>
+				</div>
+
+				<!-- Activité 5 -->
+				<div class="col">
+					<div class="card h-100 shadow-sm">
+						<img src="{{ asset('img/plante5.jpg') }}" class="card-img-top" alt="Compost collectif">
+						<div class="card-body">
+							<h5 class="card-title">🍂 Mise en place de composts collectifs</h5>
+							<p class="card-text">Favoriser la réduction des déchets organiques tout en produisant un engrais naturel pour les plantations locales.</p>
+						</div>
+					</div>
+				</div>
+
+				<!-- Activité 6 -->
+				<div class="col">
+					<div class="card h-100 shadow-sm">
+						<img src="{{ asset('img/plante7.jpg') }}" class="card-img-top" alt="Éco-construction">
+						<div class="card-body">
+							<h5 class="card-title">🏗️ Ateliers d’éco-construction</h5>
+							<p class="card-text">Formation à la construction avec des matériaux recyclés ou naturels pour promouvoir l’habitat durable.</p>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+{% endblock %}

@@ -1,0 +1,157 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}
+	Événements – RSE-IT
+{% endblock %}
+
+{% block body %}
+
+	{% include "menu.html.twig" %}
+
+	<div class="container mt-4">
+		<div class="bg-success py-3 px-3 rounded text-white">
+			<h2 class="mb-0">🌿 Événements à venir</h2>
+			<p class="mb-0">Retrouvez nos actions pour l’environnement et les rencontres écoresponsables organisées par l’association.</p>
+		</div>
+
+		<div class="bg-light px-4 py-4 mt-4 rounded">
+			<div
+				class="row row-cols-1 row-cols-md-3 g-4">
+
+				<!-- Carte 1 -->
+				<div class="col">
+					<div class="card h-100 shadow-sm">
+						<img src="{{ asset('img/plante1.jpg') }}" class="card-img-top" alt="Centre Commercial Belles Rives">
+						<div class="card-body">
+							<h5 class="card-title">🌱 Belles Rives – Journée Verte</h5>
+							<p class="card-text">Sensibilisation au recyclage et animations écolos au centre commercial de Checy.</p>
+							<ul class="list-unstyled">
+								<li>
+									<i class="fa-solid fa-calendar-day text-success"></i>
+									18 mai 2025</li>
+								<li>
+									<i class="fa-solid fa-clock text-success"></i>
+									09h00 – 16h00</li>
+								<li>
+									<i class="fa-solid fa-map-marker-alt text-success"></i>
+									Centre Commercial Belles Rives, Checy</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+				<!-- Carte 2 -->
+				<div class="col">
+					<div class="card h-100 shadow-sm">
+						<img src="{{ asset('img/plante2.jpg') }}" class="card-img-top" alt="Halles Châtelet">
+						<div class="card-body">
+							<h5 class="card-title">🧺 Marché Bio & Local</h5>
+							<p class="card-text">Un rendez-vous pour découvrir les producteurs écoresponsables de la région.</p>
+							<ul class="list-unstyled">
+								<li>
+									<i class="fa-solid fa-calendar-day text-success"></i>
+									25 mai 2025</li>
+								<li>
+									<i class="fa-solid fa-clock text-success"></i>
+									08h30 – 13h00</li>
+								<li>
+									<i class="fa-solid fa-map-marker-alt text-success"></i>
+									Halles Châtelet, Orléans</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+				<!-- Carte 3 -->
+				<div class="col">
+					<div class="card h-100 shadow-sm">
+						<img src="{{ asset('img/plante3.jpg') }}" class="card-img-top" alt="Parc des Provinces">
+						<div class="card-body">
+							<h5 class="card-title">🌳 Nettoyage du parc</h5>
+							<p class="card-text">Opération bénévole de nettoyage et plantation d'arbres pour préserver la biodiversité locale.</p>
+							<ul class="list-unstyled">
+								<li>
+									<i class="fa-solid fa-calendar-day text-success"></i>
+									2 juin 2025</li>
+								<li>
+									<i class="fa-solid fa-clock text-success"></i>
+									10h00 – 14h00</li>
+								<li>
+									<i class="fa-solid fa-map-marker-alt text-success"></i>
+									Parc d’activités des Provinces, Olivet</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+				<!-- Carte 4 -->
+				<div class="col">
+					<div class="card h-100 shadow-sm">
+						<img src="{{ asset('img/plante4.jpg') }}" class="card-img-top" alt="Eco Atelier">
+						<div class="card-body">
+							<h5 class="card-title">🛠️ Atelier DIY & Recyclage</h5>
+							<p class="card-text">Apprenez à créer des objets utiles à partir de matériaux recyclés dans une ambiance conviviale.</p>
+							<ul class="list-unstyled">
+								<li>
+									<i class="fa-solid fa-calendar-day text-success"></i>
+									9 juin 2025</li>
+								<li>
+									<i class="fa-solid fa-clock text-success"></i>
+									14h30 – 17h00</li>
+								<li>
+									<i class="fa-solid fa-map-marker-alt text-success"></i>
+									Centre RSE, Orléans</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+				<!-- Carte 5 -->
+				<div class="col">
+					<div class="card h-100 shadow-sm">
+						<img src="{{ asset('img/plante5.jpg') }}" class="card-img-top" alt="Conférence biodiversité">
+						<div class="card-body">
+							<h5 class="card-title">📢 Conférence Biodiversité</h5>
+							<p class="card-text">Discussion animée par des experts sur la faune et la flore locales en danger.</p>
+							<ul class="list-unstyled">
+								<li>
+									<i class="fa-solid fa-calendar-day text-success"></i>
+									16 juin 2025</li>
+								<li>
+									<i class="fa-solid fa-clock text-success"></i>
+									18h00 – 20h00</li>
+								<li>
+									<i class="fa-solid fa-map-marker-alt text-success"></i>
+									Maison de la Nature, Saint-Jean-le-Blanc</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+				<!-- Carte 6 -->
+				<div class="col">
+					<div class="card h-100 shadow-sm">
+						<img src="{{ asset('img/plante7.jpg') }}" class="card-img-top" alt="Fête de la nature">
+						<div class="card-body">
+							<h5 class="card-title">🎉 Fête de la Nature</h5>
+							<p class="card-text">Animations pour tous les âges, balades éducatives, ateliers enfants, musique verte.</p>
+							<ul class="list-unstyled">
+								<li>
+									<i class="fa-solid fa-calendar-day text-success"></i>
+									23 juin 2025</li>
+								<li>
+									<i class="fa-solid fa-clock text-success"></i>
+									11h00 – 18h00</li>
+								<li>
+									<i class="fa-solid fa-map-marker-alt text-success"></i>
+									Parc Floral de la Source</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+{% endblock %}
